@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 RUN apt-get update
-RUN apt-get -y install bash make
+RUN apt-get -y install bash make cmake
 
 RUN echo "## Exporting ps3dev environment" >> /root/.bashrc
 RUN echo "export PSNOOB=/usr/local/psnoob" >> /root/.bashrc
